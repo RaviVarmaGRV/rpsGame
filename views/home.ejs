@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 id="heading">ROCK PAPER SCISSORS</h1>
+
+    <div id="mainHeader">
+        <img src="../images/logo.svg" alt="" id="logo">
+        <div id="scorecard">
+            <p id="scrTxt">SCORE</p>
+            <p id="score">0</p>
+        </div>
+    </div>
+
+    <div class="roomTypes">
+        <div class="outer blueBg" id="create">
+            <div class="yteCrle">
+                CREATE ROOM
+            </div>
+        </div>
+
+        <div class="outer blueGreenBg" id="join">
+            <div class="yteCrle">
+                JOIN ROOM
+            </div>
+        </div>
+
+        <div id="forPopUp">
+            <div class="popUp">
+                <label for="roomId">Enter the room ID</label>
+                <input type="text" name="roomId" placeholder="Enter here" id="roomInput">
+                <p id="errorMsg">.</p>
+                <div class="flex">
+                    <div class="btns redBg" id="cancel">CANCEL</div>
+                    <div class="btns" id="joinRoom">JOIN ROOM</div>
+                </div>
+            </div>
+
+        </div>
+        
+
+    </div>
+    <div class="options">
+        <div class="outerSmlaller blueBg" id="paperBox">
+            <div class="innerSmaller">
+                <img src="../images/icon-paper.svg" alt="" class="shapes">
+            </div>
+        </div>
+        <div class="outerSmlaller yellowBg" id="scissorsBox">
+            <div class="innerSmaller">
+                <img src="../images/icon-scissors.svg" alt="" class="shapes">
+            </div>
+        </div>
+        <div class="outerSmlaller redBg" id="rockBox">
+            <div class="innerSmaller">
+                <img src="../images/icon-rock.svg" alt="" class="shapes">
+            </div>
+        </div>
+    </div>
+    <div id="choosenOnes">
+        <div>
+            <h2 class="person">YOU PICKED</h2>
+            <div class="outer yellowBg">
+                <div class="yteCrle">
+                    <img src="" alt="" id="selectedImage1">
+                </div>
+            </div>
+        </div>
+        <div id="playAgainBox" class="opacity">
+            <p id="winTxt">YOU WIN</p>
+            <p id="msg">.</p>
+            <div id="playAgain">PLAY AGAIN</div>
+        </div>
+        <div>
+            <h2 class="person">THE HOUSE PICKED</h2>
+            <div class="outer yellowBg">
+                <div class="yteCrle" id="firImage2">
+                    <p id="altTxt">Waiting for oppenent </p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+   
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="../client.js"></script>
+</body>
+</html>

@@ -1,0 +1,274 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:linear-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%)) ;
+    height: 100vh;
+    font-family: "Barlow Semi Condensed", serif;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    backdrop-filter: blur(20px);
+    z-index: 11;
+}
+
+#heading{
+    font-size: 100px;
+    display: block;
+
+    /* display: none; */
+}
+
+#logo{
+    width: 188.48px;
+    height: 130.68px;
+}
+
+#mainHeader{
+    border: 1px solid #5F6C82;
+    width: 800px;
+    height: 207px;
+    border-radius: 10px;
+    display: none;
+    /* display: flex; */
+
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+#scorecard{
+    background:#ffffff;
+    width:180px;
+    height: 150px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#scrTxt{
+    color: #2A45C2;
+    font-size: 19px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-top: 30px;
+
+}
+
+#score{
+    color: #565468;
+    font-size: 60px;
+    font-weight: 800;
+    letter-spacing: 4px;
+
+}
+
+.roomTypes{
+    display: flex;
+
+    /* display: none; */
+
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    position: relative;
+
+}
+
+.outer{
+    width: 292.61px;
+    height: 300px;
+    border-radius:50% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0px -10px 5px rgba(0, 0, 0, 0.267);
+}
+
+.blueGreenBg{
+    background-color:#45B9CF;
+}
+
+.blueBg{
+    background-color: #5F70F5;
+}
+
+.yteCrle{
+    width: 224.63px;
+    height: 224.63px;
+    background-color: #E6E6E6;
+    border-radius:50%;
+    box-shadow: inset 0px 10px 5px rgba(0, 0, 0, 0.219);
+    color:#3b4262;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.popUp{
+    width: 350px;
+    height: 225px;
+    background-color: hsl(214, 47%, 23%); 
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 25px;
+}
+
+#roomInput{
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    font-size: medium;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 10px;
+}
+
+#forPopUp{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.btns{
+    width: 140px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.redBg{
+    background:#dc3351;
+}
+
+.yellowBg{
+    background: #EBA114;
+}
+
+#joinRoom{
+    background:hsl(125, 47%, 38%);
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+#errorMsg{
+    color: hsl(214, 47%, 23%);
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.options{
+    height: 450px;
+    width: 500px;
+    background: url(../images/bg-triangle.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: none;
+
+    /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 90px;
+}
+
+.outerSmlaller{
+    width: 198px;
+    height: 203px;
+    border-radius:50% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0px -10px 5px rgba(0, 0, 0, 0.267);
+}
+
+.innerSmaller{
+    width: 152px;
+    height: 152px;
+    background-color: #E6E6E6;
+    border-radius:50%;
+    box-shadow: inset 0px 10px 5px rgba(0, 0, 0, 0.219);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shapes{
+    width: 73px;
+    height: 86px;
+}
+
+#choosenOnes{
+    height: 450px;
+    width: 900px;
+    text-align: center;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.person{
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+#choosenOnes img{
+    height: 141.87px;
+    width: 141.87px;
+}
+
+#playAgainBox{
+    width: 220px;
+    height: 131px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* visibility: hidden; */
+}
+
+.opacity{
+    opacity: 0;
+}
+
+#winTxt{
+    font-size: 50px;
+    font-weight: 700;
+    /* color: ; */
+}
+
+#playAgain{
+    background-color: #FFFFFF;
+    color: #3b4262;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+#msg{
+    color: #172042;
+}
